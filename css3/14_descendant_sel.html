@@ -1,0 +1,101 @@
+<!-- Create example of descendant selectors --> 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Descendant Selectors</title>
+        <style>
+            /* all ul elements inside section elements */ 
+            section ul {
+                color : blue;
+            }
+            /* all with class="hightlight" */
+            .hightlight {
+                background-color: green;
+            }
+            /* all p element with class=".hightlight" */
+            p.hightlight {
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+            }
+            /* all element with class "hightlight" as well as "mainpoint" */
+            .hightlight.mainpoint {
+                background-color: green;
+                color : red
+            }
+            /* any article element which is a direct child of a section element */
+            section > article {
+                background-color: yellow;
+            }
+            /* any h2 element which is a direct child if a selection element */
+            section > h4 {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+      
+        <h1>h1 : Descendant Selector</h1>
+        <section>
+          Table of contents:
+          <ul>
+            <li>Article 1</li>
+            <li>Article 2</li>
+            <li>Article 3</li>
+          </ul>
+        </section>
+        <article>
+          Shopping List:
+          <ul>
+            <li>Cookies</li>
+            <li>Cake</li>
+            <li>Pie</li>
+          </ul>
+        </article>
+
+        <h2 class="hightlight">h2 :Element with class selector</h2>
+        <p>This is a paragraph tag.</p>
+        <p class="hightlight">This is a paragraph tag with class="hightlight".</p>
+        <div class="mainpoint hightlight">
+          This is the main point of the entire article.
+        </div>
+
+        <h3>h3 : Child Selector</h3>
+        <section>
+          <h4>Subheading</h4>
+          <div>
+            <article>ARTICLE inside DIV, which inside the Section</article>
+          </div>
+        </section>
+        <section>
+          <article>ARTICLE as a direct child of the SECTION element.</article>
+        </section>
+        <h4>Subheading</h4>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
