@@ -11,11 +11,21 @@ body {
     border: 0;
 }
 
+.container {
+    /* Contain the logo-img */
+    overflow: hidden;
+
+}
+
+
 #logo-img {
     background: url('../images/restaurant-logo.png') no-repeat;
     width: 150px;
     height: 150px;
-    margin: 10px 15x 10px 0px;
+    margin: 20px 20px 10px 30px;
+    float: left;
+    /* Only display on large and medium screen */
+     
   }
 
 
@@ -40,12 +50,15 @@ body {
     }
 
 .navbar-brand p { /* Kosher cert */
-    color: #000;
+    /* color blue */
+    color: #3e5f8a;
     text-transform: uppercase;
-    font-size: .7em;
+    font-size: 1.1em;
+    font-weight: bold;
     margin-top: 15px;
     }
 
 .navbar-brand p span { /* Star-K */
-    vertical-align: middle;
+    /* Vertical align : Middle */
+    display: inline-block;
     }
