@@ -12,71 +12,75 @@ h1 {
 /* model box-sizing */
 * {
     box-sizing: border-box;
-    margin-top: 20px;
-    padding: 0px;
     
 }
 
-#title1 {
-    position: relative ;
-    text-align: center;
-    font-size: 30px;
-    border : 1px solid black;
-    margin-left: 300px;
-    margin-right: 0px;
-    margin-top: 0px;
-    background-color: palevioletred;    
+.box {
+    width: 100%;
+    border: 1px solid black;
+    overflow: None;
 }
 
-#title2 {
-    position: relative ;
+
+.title {
+    position: relative;
     text-align: center;
-    font-size: 30px;
-    border : 1px solid black;
-    margin-left: 300px;
+    margin-left: 250px;
     margin-right: 0px;
-    margin-top: 0px;
-    background-color: yellowgreen;    
+    margin-top: 0px; 
+    font-size: 30px;
+    font-weight: bold;
+    border: 1px solid black;
 }
 
-#title3 {
-    position: relative ;
-    text-align: center;
-    font-size: 30px;
-    border : 1px solid black;
-    margin-left: 300px;
-    margin-right: 0px;
-    margin-top: 0px;
-    background-color: skyblue;;    
+.name1 {
+    background-color: palevioletred;
 }
+
+.name2 {
+    background-color: lightblue;
+}
+
+.name3 {
+    background-color: lightgreen;
+}
+
+.content {
+    position: relative;
+    text-align: left;
+    margin-left: 0px;
+    margin : 20px;   
+}
+
+
+
 
 /* For Destop */
 @media (min-width: 992px) {
     .col-lg-4 {
         width: 33.0%;
         float: left;
-        border : 2px solid black;
-        padding-left : 10px;
-        padding-right :0px;
         margin: 2px;
-        overflow: auto;
     }
+
 
 }
 
 /* For Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-    .col-md-6 {
-        width: 50%;
-        float: left;
-        border : 1px solid black;
-    }
-    .col-md-12 {
-        width: 100%;
-        float: left;
-        border : 1px solid black;
+    .col-md-6, .col-md-12 {
+        float: left;  
     }
 
+    .col-md-6 {
+        width: 48%;
+        margin-right: 2px;
+    }
+
+    .col-md-12 {
+        width: 96%;
+        margin: 4px;
+    }
 
 }
 
@@ -85,7 +89,7 @@ h1 {
     .col-sm-12 {
         width: 100%;
         float: left;
-        border : 1px solid black;
+        margin: 2px;
     }
 
 }
