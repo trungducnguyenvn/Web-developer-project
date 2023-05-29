@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -16,7 +17,7 @@
     <nav id="header-nav" class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="">
+          <a href="index.html" class="pull-left visible-md visible-lg" id="logo-link">
             <div id="logo-img"></div>
           </a>
 
@@ -28,6 +29,12 @@
               <span>Kosher Certified</span>
             </p>
           </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> <!-- end navbar-toggler -->
           
         </div> <!-- end navbar-header -->
       </div>  <!-- end container -->
@@ -35,9 +42,8 @@
   </header>
     
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/bootstrap.js"></script>
 
 </body>
 </html>
