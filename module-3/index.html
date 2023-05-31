@@ -14,7 +14,7 @@
   </head>
 <body>
   <header>
-    <nav id="header-nav" class="navbar navbar-expand-lg">
+    <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
           <a href="index.html" class="pull-left visible-md visible-lg">
@@ -30,33 +30,35 @@
             </p>
           </div>
 
-          <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" 
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                  aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> <!-- end navbar-toggler -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button> <!-- end navbar-toggle -->
         </div> <!-- end navbar-header -->
 
-        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <div id="collapsable-nav" class="collapse navbar-collapse">
           <ul id="nav-list" class="nav navbar-nav navbar-right">
            <li>
              <a href="menu-categories.html">
-               <span class=""></span><br class="hidden-xs"> Menu</a>
+               <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
            </li>
            <li>
              <a href="#">
-               <span class="n"></span><br class="hidden-xs"> About</a>
+               <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
            </li>
            <li>
              <a href="#">
-               <span class=""></span><br class="hidden-xs"> Awards</a>
+               <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
            </li>
            <li id="phone" class="hidden-xs">
              <a href="tel:410-602-5008">
                <span>410-602-5008</span></a><div>* We Deliver</div>
            </li>
          </ul><!-- #nav-list -->
-       </div><!-- .collapse .navbar-collapse -->        
+       </div><!-- .collapse .navbar-collapse -->
+     
 
       </div>  <!-- end container -->
     </nav>
@@ -64,6 +66,7 @@
     
   <!-- Bootstrap JS plugins -->
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-2.1.4.min.js"></script>
   <!-- <script src="js/bootstrap.js"></script> -->
 
 </body>
